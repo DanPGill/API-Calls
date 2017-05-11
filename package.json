@@ -72,16 +72,17 @@
     "redux": "3.6.0",
     "redux-freeze": "^0.1.5",
     "redux-logger": "^2.8.1",
-    "redux-thunk": "2.2.0"
+    "redux-thunk": "2.2.0",
+    "superagent": "^3.5.2"
   },
   "lint-staged": {
     "src/**/*.js": [
       "yarn format:js --",
       "git add"
-     ],
-     "src/**/*.*css": [
-       "stylefmt",
-       "git add"
-     ]
+    ],
+    "src/**/*.*css": [
+      "stylefmt",
+      "git add"
+    ]
   }
 }

@@ -1,9 +1,13 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { addTodo, completeTodo, deleteTodo, updateTodoText } from 'redux/actions/todos'
+import { spotifyApiCall } from 'redux/actions/spotifyApiCall'
 import TodoList from 'components/todoList'
 
 class TodolistContainer extends Component {
+  componentDidMount() {
+    this.props.dispatch(spotifyApiCall())
+  }
   render() {
     return (
       <TodoList
